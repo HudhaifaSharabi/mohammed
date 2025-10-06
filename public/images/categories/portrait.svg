@@ -1,0 +1,18 @@
+<svg width="720" height="960" viewBox="0 0 720 960" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#0A0F14" />
+      <stop offset="100%" stop-color="#141C24" />
+    </linearGradient>
+    <radialGradient id="glow" cx="45%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="rgba(193,161,106,0.85)" />
+      <stop offset="50%" stop-color="rgba(193,161,106,0.18)" />
+      <stop offset="100%" stop-color="rgba(10,15,20,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="720" height="960" fill="url(#bg)" />
+  <ellipse cx="360" cy="280" rx="260" ry="260" fill="url(#glow)" />
+  <path d="M240 780c40-160 200-160 240 0 12 40-40 80-120 80s-132-40-120-80z" fill="#0C1319" opacity="0.9" />
+  <path d="M250 400c0-80 50-150 110-150s110 70 110 150-50 110-110 110-110-30-110-110z" fill="#101820" opacity="0.85" />
+  <path d="M220 640c20-60 100-80 140-80s120 20 140 80c-40 50-116 74-140 74s-100-24-140-74z" fill="#111C24" opacity="0.85" />
+</svg>

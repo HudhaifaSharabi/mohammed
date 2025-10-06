@@ -1,0 +1,31 @@
+<svg width="640" height="800" viewBox="0 0 640 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1014" />
+      <stop offset="100%" stop-color="#111A1F" />
+    </linearGradient>
+    <radialGradient id="rim" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="rgba(0,187,255,0.85)" />
+      <stop offset="45%" stop-color="rgba(0,187,255,0.2)" />
+      <stop offset="100%" stop-color="rgba(11,15,18,0)" />
+    </radialGradient>
+    <clipPath id="silhouette">
+      <path d="M240 170c0-60 48-110 110-110s110 50 110 110c0 46-28 86-66 102 76 28 132 110 132 200 0 124-96 224-214 224S98 596 98 472c0-90 56-172 132-200-38-16-66-56-66-102z" />
+    </clipPath>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)" />
+  <g clip-path="url(#silhouette)">
+    <rect width="640" height="800" fill="#0C1216" />
+    <rect width="640" height="800" fill="url(#rim)" />
+    <g opacity="0.3" stroke="#00BBFF" stroke-width="2">
+      <path d="M200 620c60-40 140-40 200 0" />
+      <path d="M220 520c40-36 104-36 144 0" />
+      <path d="M260 420c16-24 44-36 60-36s44 12 60 36" />
+    </g>
+    <g opacity="0.6" fill="#122028">
+      <path d="M230 340c24 32 70 40 120 40s96-8 120-40l-20-60c-16 20-60 32-100 32s-84-12-100-32z" />
+      <path d="M280 210c10 14 40 22 70 22s60-8 70-22c-18-24-46-38-70-38s-52 14-70 38z" />
+    </g>
+  </g>
+  <rect x="110" y="110" width="420" height="580" rx="40" ry="40" stroke="rgba(255,255,255,0.12)" stroke-width="4" fill="none" />
+</svg>

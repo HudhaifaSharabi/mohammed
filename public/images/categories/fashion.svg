@@ -1,0 +1,17 @@
+<svg width="720" height="960" viewBox="0 0 720 960" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1116" />
+      <stop offset="100%" stop-color="#151E26" />
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00BBFF" />
+      <stop offset="100%" stop-color="#C1A16A" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="960" fill="url(#fabric)" />
+  <path d="M160 240c120-80 280-80 400 0l-60 480c-20 100-260 100-280 0z" fill="#0F171E" opacity="0.85" />
+  <path d="M220 260c80-40 200-40 280 0l-36 120c-70-32-174-32-244 0z" fill="#111C24" opacity="0.9" />
+  <path d="M260 520c48-16 152-16 200 0l-20 160c-40 24-120 24-160 0z" fill="#0C1319" opacity="0.95" />
+  <path d="M150 240c110 120 310 120 420 0" stroke="url(#stroke)" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.6" />
+</svg>

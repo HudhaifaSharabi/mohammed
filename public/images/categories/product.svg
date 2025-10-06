@@ -1,0 +1,21 @@
+<svg width="720" height="960" viewBox="0 0 720 960" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stage" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#06090C" />
+      <stop offset="100%" stop-color="#101821" />
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(0,187,255,0.55)" />
+      <stop offset="55%" stop-color="rgba(0,187,255,0.15)" />
+      <stop offset="100%" stop-color="rgba(6,9,12,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="720" height="960" fill="url(#stage)" />
+  <ellipse cx="360" cy="260" rx="260" ry="220" fill="url(#spot)" />
+  <rect x="220" y="460" width="280" height="260" rx="36" fill="#0D151C" />
+  <rect x="260" y="420" width="200" height="60" rx="16" fill="#111C24" />
+  <rect x="280" y="520" width="160" height="120" rx="24" fill="#16232C" />
+  <circle cx="360" cy="640" r="44" fill="#00BBFF" opacity="0.35" />
+  <rect x="200" y="720" width="320" height="40" rx="20" fill="#101820" />
+  <rect x="240" y="740" width="240" height="20" rx="10" fill="#18242C" />
+</svg>

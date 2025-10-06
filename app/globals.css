@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0F12;
+  --surface: #11161A;
+  --text: #E6EDF3;
+  --muted: #9AA6B2;
+  --accent: #00BBFF;
+  --accent-2: #C1A16A;
+  --line: #1C232A;
+  --success: #19B885;
+  --warning: #F5A524;
+  --danger: #EF4444;
+  color-scheme: dark;
+  background-color: var(--bg);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+}
+
+body {
+  font-family: var(--font-en), var(--font-ar), sans-serif;
+  font-feature-settings: "ss01" on, "liga" on;
+  color: var(--text);
+  background: radial-gradient(circle at top, rgba(0, 187, 255, 0.06), transparent 45%),
+    radial-gradient(circle at bottom, rgba(193, 161, 106, 0.08), transparent 55%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+main {
+  @apply relative z-0;
+}
+
+section {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply mx-auto;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.35)];
+}
+
+.card {
+  @apply bg-surface/80 border border-white/5 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.25)];
+}
+
+.reticle {
+  pointer-events: none;
+  position: fixed;
+  width: 140px;
+  height: 140px;
+  border-radius: 9999px;
+  border: 2px solid rgba(230, 237, 243, 0.6);
+  mix-blend-mode: screen;
+  box-shadow: inset 0 0 0 1px rgba(0, 187, 255, 0.4), 0 0 35px rgba(0, 187, 255, 0.35);
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+
+.reticle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 16px rgba(0, 187, 255, 0.9);
+}
+
+.spotlight-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(17, 22, 26, 0) 0%, rgba(11, 15, 18, 0.88) 65%);
+  mix-blend-mode: soft-light;
+  opacity: 0.65;
+  transition: opacity 0.3s ease;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .mask-spotlight {
+    mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.25) 60%, rgba(255, 255, 255, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.25) 60%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+@layer base {
+  *:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
